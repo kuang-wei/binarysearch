@@ -12,12 +12,13 @@ def binarysearch(inputlist, target):
 	Return:
 		True or False
 	"""
-	listlen = len(inputlist)
-	if listlen==0:					# if list is empty, search is done
-		return False
 
-	mididx = (len(inputlist))//2	# index of the middle item
-	midval = inputlist[mididx]		# value of the middle item
+	listlen = len(inputlist)
+	if listlen==0:                  # if list is empty, search is done
+		return False
+	mididx = (len(inputlist))//2    # index of the middle item
+	midval = inputlist[mididx]      # value of the middle item
+	
 	if midval==target:
 		return True
 	else:
